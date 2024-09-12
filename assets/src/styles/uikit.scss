@@ -1,0 +1,31 @@
+@import './utils';
+@import './components/';
+
+body {
+    // background-color: white;
+    background-color: lightblue;
+}
+
+h1 {
+    @include h1()
+}
+
+h2 {
+    @include h2()
+}
+
+h3 {
+    @include h3()
+}
+
+.main__text {
+    @include p1()
+}
+
+.text {
+    @include p2()
+}
+
+.values__text {
+    @include p3()
+}

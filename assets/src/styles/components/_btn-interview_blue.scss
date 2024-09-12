@@ -1,0 +1,19 @@
+.btn-interview_blue {
+    width: 32.7rem;
+    height: 5rem;
+
+    border-radius: 0.5rem;
+
+    background-color: $titleColor;
+    transition: color 0.3s;
+
+    color: $light_blue;
+    font-family: $titleFont;
+    font-size: 1.8rem;
+    font-weight: 700;
+
+    &:hover {
+        cursor: pointer;
+        color: $dark_blue;
+    }
+}

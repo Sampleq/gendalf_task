@@ -1,0 +1,19 @@
+{
+  "name": "gendalf_task",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel assets/src/index.html --open --no-source-maps",
+    "build": "parcel build assets/src/index.html --out-dir=build --no-source-maps --public-url ./",
+    "dev:uikit": "parcel assets/src/uikit.html --open --no-source-maps",
+    "build:uikit": "parcel build assets/src/uikit.html --out-dir=uikit --no-source-maps --public-url ./"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "sass": "^1.78.0"
+  }
+}

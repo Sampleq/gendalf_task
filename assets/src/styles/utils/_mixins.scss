@@ -1,0 +1,82 @@
+@mixin h1($_color: $titleColor) {
+    color: $_color;
+    font-family: $titleFont;
+    font-size: 2.4rem;
+    font-weight: 700;
+
+    @media ($notebook) {
+        font-size: 6.4rem;
+    }
+}
+
+@mixin h2($_color: $mainColor) {
+    color: $_color;
+    font-family: $titleFont;
+    font-size: 2.8rem;
+    font-weight: 300;
+
+    @media ($notebook) {
+        font-size: 3.6rem;
+    }
+
+}
+
+// value (item) title
+@mixin h3($_color: $textColor) {
+    color: $_color;
+    font-family: $titleFont;
+    font-size: 1.8rem;
+    font-weight: 700;
+
+    @media ($notebook) {
+        font-size: 2.0rem;
+    }
+}
+
+@mixin p1($_color: $titleColor) {
+    color: $_color;
+    font-family: $mainFont;
+    font-weight: 400;
+
+    font-size: 1.6rem;
+
+    @media ($notebook) {
+        font-size: 2.5rem;
+    }
+
+}
+
+@mixin p2($_color: $textColor) {
+    color: $_color;
+
+    font-family: $mainFont;
+    font-weight: 400;
+
+    font-size: 1.6rem;
+
+    @media ($notebook) {
+        font-size: 1.8rem;
+    }
+}
+
+// value text
+@mixin p3($_color: $textColor) {
+    color: $_color;
+
+    font-family: $mainFont;
+    font-weight: 400;
+
+    font-size: 1.4rem;
+
+    @media ($notebook) {
+        font-size: 1.6rem;
+    }
+}
+
+%img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}

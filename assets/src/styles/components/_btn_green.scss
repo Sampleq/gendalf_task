@@ -1,0 +1,19 @@
+.btn_green {
+    width: 17.5rem;
+    height: 5rem;
+
+    border-radius: 0.5rem;
+
+    background-color: $light_green;
+    transition: background-color 0.3s;
+
+    color: $titleColor;
+    font-family: $titleFont;
+    font-size: 1.8rem;
+    font-weight: 700;
+
+    &:hover {
+        cursor: pointer;
+        background-color: $dark_green;
+    }
+}
