@@ -1,0 +1,37 @@
+.main {
+    text-align: center;
+
+    padding-top: 3.1rem;
+    padding-bottom: 3.5rem;
+
+    background: url('../images/bg/about.png') no-repeat;
+    background-color: rgba(0, 47, 61, 0.769);
+    background-size: cover;
+    background-blend-mode: saturation;
+
+    @media ($notebook) {
+        padding-top: 6.4rem;
+        padding-bottom: 11.4rem;
+    }
+
+    &__title {
+        @include h1();
+        margin-bottom: 2rem;
+    }
+
+    &__text {
+        @include p1();
+
+        max-width: 84rem;
+        margin: auto;
+        margin-bottom: 4.3rem;
+    }
+
+    &__btns {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 6.3rem;
+        row-gap: 1rem;
+        justify-content: center;
+    }
+}
