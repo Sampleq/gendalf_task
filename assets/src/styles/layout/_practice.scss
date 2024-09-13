@@ -1,0 +1,35 @@
+.practice {
+    // background: url('../images/bg/practice_bg.png') rgba(0, 47, 61, 0.502) no-repeat; // OK
+    background: url('../images/bg/practice_bg.png') no-repeat;
+    background-color: rgba(0, 47, 61, 0.502);
+    background-size: cover;
+    background-blend-mode: overlay;
+
+    padding-top: 3.4rem;
+    padding-bottom: 2.9rem;
+
+    text-align: center;
+
+    @media ($notebook) {
+        padding-top: 8.3rem;
+        padding-bottom: 14.1rem;
+    }
+
+    &__title {
+        @include h2($titleColor);
+
+        margin-bottom: 2.1rem;
+
+        @media ($notebook) {
+            font-weight: 700;
+
+            max-width: 80rem; // for line break
+            margin: auto;
+            margin-bottom: 4.3rem;
+        }
+    }
+
+    &__btn {
+        width: 29.5rem;
+    }
+}
