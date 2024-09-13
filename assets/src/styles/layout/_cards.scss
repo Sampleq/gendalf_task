@@ -2,14 +2,47 @@
     background-color: $grey;
 
     padding-top: 3.2rem;
-    padding-bottom: 3.9rem;
+    padding-bottom: 2.9rem;
 
     @media ($notebook) {
         padding-top: 3.7rem;
-        padding-bottom: 4.7rem;
+        padding-bottom: 3.7rem;
     }
 
     &__title {
         @include h2();
+    }
+
+
+    &__slider {}
+}
+
+.slider {
+    &__wrapper {
+        overflow: scroll;
+        padding-bottom: 1rem;
+        padding-left: 1rem;
+        max-width: 120rem;
+
+        /* Hide scrollbar for IE, Edge and Firefox */
+        -ms-overflow-style: none;
+        /* IE and Edge */
+        scrollbar-width: none;
+        /* Firefox */
+
+        /* Hide scrollbar for Chrome, Safari and Opera */
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+
+    &__cards-cont {
+        display: flex;
+        gap: 2.8rem;
+
+    }
+
+    &__card {
+        flex-shrink: 0;
     }
 }
