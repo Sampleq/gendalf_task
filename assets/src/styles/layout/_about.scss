@@ -1,0 +1,63 @@
+.about {
+    padding-top: 4.5rem;
+    padding-bottom: 3rem;
+
+    @media ($notebook) {
+        padding-top: 5rem;
+        padding-bottom: 6rem;
+    }
+
+    &__title {
+        @include h2();
+        margin-bottom: 1rem;
+
+        @media ($notebook) {
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__text {
+        @include p2();
+        margin-bottom: 1rem;
+
+        max-width: 73rem;
+
+        &:last-of-type {
+            margin-bottom: 3rem;
+
+            @media ($notebook) {
+                margin-bottom: 2rem;
+            }
+        }
+    }
+
+    &__btns {
+        text-align: center;
+    }
+
+    &__btn {
+        margin-bottom: 1rem;
+        margin-right: 2.1rem;
+    }
+
+    &__img {
+        // @extend %img;
+
+        // &-cont {
+        display: none;
+
+        @media ($notebook) {
+            display: block;
+            height: 37rem;
+        }
+
+        // }
+    }
+
+    &__wrapper {
+        @media ($notebook) {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}

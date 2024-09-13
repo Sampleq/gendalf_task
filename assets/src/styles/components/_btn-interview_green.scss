@@ -2,6 +2,7 @@
     width: 32.7rem;
     height: 5rem;
 
+    border: 0.1rem solid $light_green;
     border-radius: 0.5rem;
 
     background-color: $titleColor;
@@ -15,5 +16,6 @@
     &:hover {
         cursor: pointer;
         color: $dark_green;
+        border: 0.1rem solid $dark_green;
     }
 }
