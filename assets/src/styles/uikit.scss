@@ -3,11 +3,13 @@
 
 body {
     // background-color: white;
-    background-color: lightblue;
+    // background-color: lightblue;
 }
 
 h1 {
-    @include h1()
+    @include h1();
+
+    background-color: lightblue;
 }
 
 h2 {
@@ -19,7 +21,9 @@ h3 {
 }
 
 .main__text {
-    @include p1()
+    @include p1();
+
+    background-color: lightblue;
 }
 
 .text {

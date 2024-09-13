@@ -1,9 +1,9 @@
 export function collapsableFAQ(faq) {
     const questions = faq.querySelectorAll('.faq__question');
-    console.log(questions);
+    // console.log(questions);
 
     const answers = faq.querySelectorAll('.faq__answer');
-    console.log(answers);
+    // console.log(answers);
 
     answers.forEach(answer => {
         answer.hidden = true;
