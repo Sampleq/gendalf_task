@@ -1,0 +1,113 @@
+.header {
+    background-color: $titleColor;
+
+    @media ($notebook) {
+        background-color: $mainColor;
+    }
+
+    padding: 0.9rem;
+    padding-bottom: 0.5rem;
+
+    display: flex;
+    // gap: 4rem;
+    align-items: center;
+    justify-content: space-between;
+
+    &__nav {
+        display: none;
+
+        @media ($notebook) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &_mob {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: $mainColor;
+
+
+            @media ($notebook) {
+                position: static;
+
+                display: flex;
+            }
+
+            & .menu {}
+
+
+
+
+            //
+            // & .menu {
+            //     border: 1px solid yellowgreen;
+
+            //     position: fixed;
+            //     top: 0;
+            //     bottom: 0;
+            //     left: 0;
+            //     right: 0;
+            //     background-color: $mainColor;
+
+            //     @media ($notebook) {
+            //         position: static;
+            //     }
+            // }
+
+        }
+    }
+
+
+
+    &__btn {
+        display: none;
+
+        @media ($notebook) {
+            display: block;
+        }
+    }
+
+    &__icon {
+        display: block;
+        width: 3.2rem;
+        height: 3.2rem;
+
+        // border: 1px solid yellowgreen;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        @media ($notebook) {
+            display: none;
+        }
+
+
+        &_search {
+            background: url('../images/svg/search.svg') no-repeat;
+        }
+
+        &_basket {
+            background: url('../images/svg/basket.svg') no-repeat;
+        }
+
+        &_user {
+            background: url('../images/svg/user.svg') no-repeat;
+        }
+
+        &_burger {
+            width: 3.8rem;
+            background: url('../images/svg/burger.svg') no-repeat;
+        }
+
+    }
+}

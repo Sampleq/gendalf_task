@@ -1,0 +1,29 @@
+.menu {
+    // border: 3px solid yellowgreen;
+
+    // display: none;
+    display: flex;
+    flex-direction: column;
+    // gap: 3.9rem;
+    gap: 2rem;
+
+    @media ($notebook) {
+        display: flex;
+        flex-direction: row;
+        column-gap: 3.9rem;
+        justify-content: space-between;
+    }
+
+
+    &__link {
+        @include p2($titleColor);
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+
+
+
+}

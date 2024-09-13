@@ -6,9 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
     <link rel="stylesheet" href="./styles/index.scss">
+
+    <script type="module" src="./js/index.js" defer></script>
 </head>
 
 <body>
+    <!-- header -->
+    <header class="header">
+
+        <div class="header__icon header__icon_search"></div>
+        <div class="header__icon header__icon_basket"></div>
+
+
+        <img class="header__logo" src="./images/logo.png" alt="">
+
+        <div class="header__icon header__icon_user"></div>
+        <div class="header__icon header__icon_burger" id="menu_opener"></div>
+
+        <nav class="header__nav" id="nav">
+            <ul class="menu" id="menu">
+                <li class="menu__item"><a class="menu__link" href="#">Профориентация </a></li>
+                <li class="menu__item"><a class="menu__link" href="#">Выбрать вакансию</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">Карьера в ГЭНДАЛЬФ</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">Стажерство</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">Отзывы</a></li>
+            </ul>
+        </nav>
+
+        <button class="btn-interview_blue header__btn">Запись на собеседование</button>
+
+    </header>
 
     <!-- main -->
     <section class="main">
