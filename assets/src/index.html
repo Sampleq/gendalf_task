@@ -451,8 +451,55 @@
         </div>
     </section>
 
+    <section class="signing">
+        <div class="signing__container">
+            <h2 class="signing__title">Записаться на собеседование</h2>
 
-    </div>
+            <form name="form" id="form" class="form">
+                <input type="text" name="name" placeholder="Как к вам обращаться?">
+                <input type="tel" name="tel" placeholder="Телефон">
+                <input type="email" name="email" placeholder="Email">
+                <input type="text" name="jobtitle" placeholder="Желаемая должность">
+
+                <div class="form__radio-inputs">
+                    <span>
+                        Выберите категорию занятости
+                    </span>
+
+                    <div>
+                        <input type="radio" name="workstyle" id="office" checked>
+                        <label for="office">Работа в офисе</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="workstyle" id="try">
+                        <label for="try">Стажировка</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="workstyle" id="remote">
+                        <label for="remote">Удаленная работа</label>
+                    </div>
+                </div>
+
+                <textarea rows="1" aria-expanded="false" name="textarea" id="textarea"
+                    placeholder="Ваши вопросы"></textarea>
+
+                <div class="form__btns">
+                    <!-- regular  input type="file"-->
+                    <!-- <input type="file" name="cv" accept=".pdf, .doc, .docx, .jpg, .jpeg"> -->
+
+                    <!-- custom text in tricked input type="file" -->
+                    <button class="fakeInputFile" onclick="document.getElementById('getFile').click()">Прикрепить
+                        резюме</button>
+                    <input type='file' id="getFile" name="cv" style="display:none">
+
+                    <input type="submit" value="Записаться">
+                </div>
+
+            </form>
+        </div>
+    </section>
+
+
 
     <!-- needs to modify from other project -->
     <!-- <script src="./js/slider.js"></script> -->
