@@ -1,0 +1,15 @@
+.cards {
+    background-color: $grey;
+
+    padding-top: 3.2rem;
+    padding-bottom: 3.9rem;
+
+    @media ($notebook) {
+        padding-top: 3.7rem;
+        padding-bottom: 4.7rem;
+    }
+
+    &__title {
+        @include h2();
+    }
+}
