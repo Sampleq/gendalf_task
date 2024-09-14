@@ -1,8 +1,6 @@
 export function validateForm(form) {
-    // console.log(form);
 
     const name = form.name;
-    // console.log(name);
     const jobtitle = form.jobtitle;
     const email = form.email;
     const phone = form.phone;
@@ -25,7 +23,8 @@ export function validateForm(form) {
 
 
     function checkTextInput(textInput) {
-        const validityCondition = textInput.value.trim() !== '';
+        const value = textInput.value;
+        const validityCondition = value.trim() !== '' && !/^[^\w]+$/.test(value); // textinput must contain letters or/and digits - belong to \w
 
         return applyValidityCheck(textInput, validityCondition);
     }
@@ -38,7 +37,7 @@ export function validateForm(form) {
     }
 
     function checkPhoneInput(phoneInput) {
-        // 8(800)708-89-00 8800708-89-00 88007088900 +78007088900 +7-800-708-89-00 +35 095 3432121  +35 095 343 21 21etc.
+        // 8(800)708-89-00 8800708-89-00 88007088900 +78007088900 88007088900 +7-800-708-89-00 +35 095 3432121  +35 095 343 21 21etc.
         const regExpPhone = /^(\+\d\d?|\d)[- ]?\(?([0-9]{3})\)?([ .-]?)([0-9]{3})([ .-]?)([0-9]{2})([ .-]?)([0-9]{2})$/;
         const validityCondition = regExpPhone.test(phoneInput.value);
 
@@ -47,15 +46,23 @@ export function validateForm(form) {
 
     function applyValidityCheck(elem, validityCondition) {
         if (!validityCondition) {
+            // elem.style.color = 'red'; // OK
+            // elem.style.background = 'pink'; // OK
 
-            elem.style.color = 'red';
-            elem.style.background = 'pink';
+            elem.classList.remove('greenchecked');
+            elem.classList.add('redcross');
 
             return false;
         }
 
-        elem.style.color = '';
-        elem.style.background = '';
+        // elem.style.color = ''; // OK
+        // elem.style.background = ''; // OK
+
+        // // doesn't work (url) in inline style
+        // elem.style.background = "no-repeat 140%/50% 80% url(../images/svg/greenchecked.svg)";
+
+        elem.classList.remove('redcross');
+        elem.classList.add('greenchecked');
 
         return true;
     }
@@ -71,7 +78,7 @@ export function validateForm(form) {
         const emailChecked = checkEmailInput(email);
         const phoneChecked = checkPhoneInput(phone);
 
-
+        // don't check CV-file presense due testing purpose
         if (nameChecked && jobtitleChecked && emailChecked && phoneChecked) {
             alert('Форма отправлена!');
             form.submit(); // submit form if al OK 
@@ -80,12 +87,6 @@ export function validateForm(form) {
 
         alert('Не отправлено!\n\nЗаполните корректно поля формы!');
     }
-
-
-
-
-
-
 
 }
 
