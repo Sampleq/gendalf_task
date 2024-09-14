@@ -74,11 +74,8 @@
 
     /* to preserve card shadow, cutted by overflow hidden of .swiper-wrapper*/
     scale: calc(1 / 0.95);
+    // custom slider with additional wrapper to preserve card shadow, made by myself  - https://github.com/Sampleq/underwear_landing
 }
-
-// .swiper-wrapper {
-//     // padding: 1rem 0;
-// }
 
 .swiper-slide {
     /* to preserve card shadow, cutted by overflow hidden of .swiper-wrapper*/
@@ -97,13 +94,11 @@
 .swiper-button-next {
     @media ($notebook) {
         translate: 125% 100%;
-        // right: -1rem !important;
     }
 }
 
 .swiper-button-prev {
     @media ($notebook) {
         translate: -125% 100%;
-        // left: -1rem !important;
     }
 }

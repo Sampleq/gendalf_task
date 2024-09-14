@@ -1,21 +1,21 @@
 import { menuOpener } from "./_menu";
 import { collapsableFAQ } from "./_collapsable";
-import { validateForm } from "./_validateForm";
 import { fakeInputFile } from "./_fakeInputFile";
+import { validateForm } from "./_validateForm";
+import { Swiper } from "../js_libs/swiper-bundle.min";
 
 menuOpener();
+
 collapsableFAQ(document.querySelector('.faq__questions'));
 
 fakeInputFile();
 
 const form = document.forms.signing_form;
-form.onsubmit = function (event) {
-    validateForm(this);
-}
+validateForm(form);
 
 
 
-import { Swiper } from "../js_libs/swiper-bundle.min";
+
 // console.log(Swiper);
 
 const swiper = new Swiper('.swiper', {
@@ -37,12 +37,12 @@ const swiper = new Swiper('.swiper', {
             slidesPerView: 2,
             spaceBetween: 28
         },
-        // when window width is >= 875px
+        // when window width is >= 1024px
         1024: {
             slidesPerView: 3,
             spaceBetween: 28
         },
-        // when window width is >= 640px
+        // when window width is >= 1280px
         1280: {
             slidesPerView: 4,
             spaceBetween: 28
