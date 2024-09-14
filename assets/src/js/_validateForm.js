@@ -24,7 +24,7 @@ export function validateForm(form) {
 
     function checkTextInput(textInput) {
         const value = textInput.value;
-        const validityCondition = value.trim() !== '' && !/^[^\w]+$/.test(value); // textinput must contain letters or/and digits - belong to \w
+        const validityCondition = value.trim() !== '' && !/^[^\wа-яё]+$/i.test(value); // textinput must contain letters or/and digits - belong to \w and Russian letters а-яё
 
         return applyValidityCheck(textInput, validityCondition);
     }
