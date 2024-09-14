@@ -7,6 +7,8 @@
     <title>Добро пожаловать в ГЭНДАЛЬФ!</title>
     <link rel="stylesheet" href="./styles/index.scss">
 
+    <link rel="stylesheet" href="./js_libs/swiper-bundle.min.css">
+
     <!-- Module scripts are always deferred -->
     <script type="module" src="./js/index.js"></script>
 </head>
@@ -199,111 +201,114 @@
 
 
     <section class="cards">
-        <div class="wrapper">
+        <div class="wrapper cards__wrapper">
             <h2 class="cards__title">Живая лента</h2>
 
-            <!-- SLIDER -->
-            <div class="slider cards__slider">
-                <div class="slider__wrapper">
+            <!-- // swiper-bundle SLIDER -->
+            <div class="swiper">
+                <div class="swiper-wrapper">
 
-                    <div class="slider__cards-cont">
-                        <!-- current card -->
-                        <div class="card slider__card">
-                            <div class="card__img-cont">
-                                <img src="./images/cards/card1.png" alt="" class="card__img">
-                            </div>
+                    <!-- Slides -->
 
-                            <p class="card__text">
-                                Экономим на бумаге и угадываем фильмы: дайджест видео марта 2022 года
-                            </p>
-
-                            <a href="#" class="card__link">Перейти к статье</a>
+                    <div class="swiper-slide card slider__card">
+                        <div class="card__img-cont">
+                            <img src="./images/cards/card1.png" alt="" class="card__img">
                         </div>
 
-                        <div class="card slider__card">
-                            <div class="card__img-cont">
-                                <img src="./images/cards/card2.png" alt="" class="card__img">
-                            </div>
+                        <p class="card__text">
+                            Экономим на бумаге и угадываем фильмы: дайджест видео марта 2022 года
+                        </p>
 
-                            <p class="card__text">
-                                Изменения 2022 года
-                            </p>
-
-                            <a href="#" class="card__link">Перейти к статье</a>
-                        </div>
-
-                        <div class="card slider__card">
-                            <div class="card__img-cont">
-                                <img src="./images/cards/card3.png" alt="" class="card__img">
-                            </div>
-
-                            <p class="card__text">
-                                Почему стоит работать программистом в 2022 году
-                            </p>
-
-                            <a href="#" class="card__link">Перейти к статье</a>
-                        </div>
-
-                        <div class="card slider__card">
-                            <div class="card__img-cont">
-                                <img src="./images/cards/card4.png" alt="" class="card__img">
-                            </div>
-
-                            <p class="card__text">
-                                Автоматизированный УСН и путевые листы: дайджест новостей за март 2022.
-                                Автоматизированный УСН и путевые листы
-                            </p>
-
-                            <a href="#" class="card__link">Перейти к статье</a>
-                        </div>
-
-                        <div class="card slider__card">
-                            <div class="card__img-cont">
-                                <img src="./images/cards/card2.png" alt="" class="card__img">
-                            </div>
-
-                            <p class="card__text">
-                                Изменения 2022 года
-                            </p>
-
-                            <a href="#" class="card__link">Перейти к статье</a>
-                        </div>
-
-                        <div class="card slider__card">
-                            <div class="card__img-cont">
-                                <img src="./images/cards/card1.png" alt="" class="card__img">
-                            </div>
-
-                            <p class="card__text">
-                                Почему стоит работать программистом в 2022 году
-                            </p>
-
-                            <a href="#" class="card__link">Перейти к статье</a>
-                        </div>
-
-                        <div class="card slider__card">
-                            <div class="card__img-cont">
-                                <img src="./images/cards/card3.png" alt="" class="card__img">
-                            </div>
-
-                            <p class="card__text">
-                                Автоматизированный УСН и путевые листы: дайджест новостей за март 2022.
-                                Автоматизированный УСН и путевые листы
-                            </p>
-
-                            <a href="#" class="card__link">Перейти к статье</a>
-                        </div>
-
+                        <a href="#" class="card__link">Перейти к статье</a>
                     </div>
+
+
+                    <div class="swiper-slide card slider__card">
+                        <div class="card__img-cont">
+                            <img src="./images/cards/card2.png" alt="" class="card__img">
+                        </div>
+
+                        <p class="card__text">
+                            Изменения 2022 года
+                        </p>
+
+                        <a href="#" class="card__link">Перейти к статье</a>
+                    </div>
+
+                    <div class="swiper-slide card slider__card">
+                        <div class="card__img-cont">
+                            <img src="./images/cards/card3.png" alt="" class="card__img">
+                        </div>
+
+                        <p class="card__text">
+                            Почему стоит работать программистом в 2022 году
+                        </p>
+
+                        <a href="#" class="card__link">Перейти к статье</a>
+                    </div>
+
+                    <div class="swiper-slide card slider__card">
+                        <div class="card__img-cont">
+                            <img src="./images/cards/card4.png" alt="" class="card__img">
+                        </div>
+
+                        <p class="card__text">
+                            Автоматизированный УСН и путевые листы: дайджест новостей за март 2022.
+                            Автоматизированный УСН и путевые листы
+                        </p>
+
+                        <a href="#" class="card__link">Перейти к статье</a>
+                    </div>
+
+                    <div class="swiper-slide card slider__card">
+                        <div class="card__img-cont">
+                            <img src="./images/cards/card2.png" alt="" class="card__img">
+                        </div>
+
+                        <p class="card__text">
+                            Изменения 2022 года
+                        </p>
+
+                        <a href="#" class="card__link">Перейти к статье</a>
+                    </div>
+
+                    <div class="swiper-slide card slider__card">
+                        <div class="card__img-cont">
+                            <img src="./images/cards/card1.png" alt="" class="card__img">
+                        </div>
+
+                        <p class="card__text">
+                            Почему стоит работать программистом в 2022 году
+                        </p>
+
+                        <a href="#" class="card__link">Перейти к статье</a>
+                    </div>
+
+                    <div class="swiper-slide card slider__card">
+                        <div class="card__img-cont">
+                            <img src="./images/cards/card3.png" alt="" class="card__img">
+                        </div>
+
+                        <p class="card__text">
+                            Автоматизированный УСН и путевые листы: дайджест новостей за март 2022.
+                            Автоматизированный УСН и путевые листы
+                        </p>
+
+                        <a href="#" class="card__link">Перейти к статье</a>
+                    </div>
+
                 </div>
-
-
             </div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
 
         </div>
 
         </div>
     </section>
+
+
 
     <!-- practice for students -->
     <section class="practice">
@@ -456,7 +461,7 @@
         <div class="signing__container">
             <h2 class="signing__title">Записаться на собеседование</h2>
 
-            <form name="form" id="form" class="form">
+            <form name="signing_form" id="form" class="form">
                 <input type="text" name="name" placeholder="Как к вам обращаться?">
                 <input type="tel" name="tel" placeholder="Телефон">
                 <input type="email" name="email" placeholder="Email">
@@ -487,9 +492,10 @@
                     <!-- regular  input type="file"-->
                     <!-- <input type="file" name="cv" accept=".pdf, .doc, .docx, .jpg, .jpeg"> -->
 
-                    <!-- custom text in tricked input type="file" -->
-                    <button class="fakeInputFile" onclick="document.getElementById('getFile').click()">Прикрепить
-                        резюме</button>
+                    <!-- custom text in tricked input type="file" ; with button tag - glitch on Enter on other inputs -->
+                    <div tabindex="0" class="fakeInputFile">
+                        Прикрепить резюме 📎
+                    </div>
                     <input type='file' id="getFile" name="cv" style="display:none">
 
                     <input type="submit" value="Записаться">
@@ -498,6 +504,8 @@
             </form>
         </div>
     </section>
+
+
 
 
 

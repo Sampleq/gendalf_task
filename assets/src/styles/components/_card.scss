@@ -1,15 +1,16 @@
 .card {
-    display: flex;
+    display: flex !important; // !important - for swiper lib
     flex-direction: column;
 
-    width: 27.3rem;
-    min-height: 41.2rem;
+    width: 27.3rem !important;
+    // min-height: 41.2rem;
+    height: 41.2rem !important;
     border-radius: 0.5rem;
     overflow: hidden;
 
     box-shadow: 0px 2px 6px 0px #666666B2;
 
-    border: 2px solid rgb(233, 249, 254); // make gradient border
+    border: 1px solid rgb(233, 249, 254); // make gradient border
     // border: 2px solid; //  gradient border
     // border-image: linear-gradient(to left, rgb(255, 255, 255), rgb(233, 249, 254));
     // border-image-slice: 1;

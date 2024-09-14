@@ -11,12 +11,18 @@
 
     &__title {
         @include h2();
+        margin-bottom: 2rem;
     }
 
 
     &__slider {}
+
+    &__wrapper {
+        position: relative;
+    }
 }
 
+// scroll SLIDER - not used, can be removed
 .slider {
     &__wrapper {
         overflow: scroll;
@@ -44,5 +50,60 @@
 
     &__card {
         flex-shrink: 0;
+    }
+}
+
+// // swiper-bundle
+.swiper {
+    // 273 - card width 
+    // 28 - gap
+
+    width: 273px;
+
+    @media ($tablet) {
+        width: 574px;
+    }
+
+    @media ($laptop) {
+        width: 875px;
+    }
+
+    @media ($notebook) {
+        width: 1176px;
+    }
+
+    /* to preserve card shadow, cutted by overflow hidden of .swiper-wrapper*/
+    scale: calc(1 / 0.95);
+}
+
+// .swiper-wrapper {
+//     // padding: 1rem 0;
+// }
+
+.swiper-slide {
+    /* to preserve card shadow, cutted by overflow hidden of .swiper-wrapper*/
+    scale: 0.95;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    translate: 0 100%;
+
+    &::after {
+        color: $textColor;
+    }
+}
+
+.swiper-button-next {
+    @media ($notebook) {
+        translate: 125% 100%;
+        // right: -1rem !important;
+    }
+}
+
+.swiper-button-prev {
+    @media ($notebook) {
+        translate: -125% 100%;
+        // left: -1rem !important;
     }
 }

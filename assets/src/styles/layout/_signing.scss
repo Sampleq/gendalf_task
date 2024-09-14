@@ -46,7 +46,7 @@
 
     & input,
     & textarea,
-    & button {
+    & .fakeInputFile {
         background-color: #FFF;
         padding: 1.2rem 1.6rem 1.1rem;
 
@@ -111,6 +111,8 @@
         }
 
         & .fakeInputFile {
+
+            cursor: pointer;
             width: 29.5rem;
 
             font-family: $mainFont;
