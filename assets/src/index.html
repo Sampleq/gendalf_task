@@ -37,7 +37,9 @@
             </ul>
         </nav>
 
-        <button class="btn-interview_blue header__btn">Запись на собеседование</button>
+        <button class="btn-interview_blue header__btn"
+            onclick="document.getElementById('signing').scrollIntoView({behavior:'smooth'})">Запись на
+            собеседование</button>
 
     </header>
 
@@ -53,8 +55,11 @@
             </p>
 
             <div class="main__btns">
-                <button class="btn_green main__btn">Почему мы</button>
-                <button class="btn-interview_green main__btn">Записаться на собеседование</button>
+                <button class="btn_green main__btn"
+                    onclick="document.getElementById('values').scrollIntoView({behavior:'smooth'})">Почему мы</button>
+                <button class="btn-interview_green main__btn"
+                    onclick="document.getElementById('signing').scrollIntoView({behavior:'smooth'})">Записаться на
+                    собеседование</button>
             </div>
 
         </div>
@@ -86,7 +91,9 @@
 
                 <div class="about__btns">
                     <button class="btn_blue about__btn">Узнать больше</button>
-                    <button class="btn-interview_blue about__btn">Записаться на собеседование</button>
+                    <button class="btn-interview_blue about__btn"
+                        onclick="document.getElementById('signing').scrollIntoView({behavior:'smooth'})">Записаться на
+                        собеседование</button>
                 </div>
             </div>
 
@@ -98,7 +105,7 @@
     </section>
 
     <!-- values -->
-    <section class="values">
+    <section class="values" id="values">
         <div class="wrapper">
             <h2 class="values__title">Наши ценности скажут о нас больше:</h2>
         </div>
@@ -304,7 +311,8 @@
     <section class="practice">
         <h2 class="practice__title">Ты студент и хочешь устроиться на практику?</h2>
 
-        <button class="btn_green practice__btn">Оставить заявку</button>
+        <button class="btn_green practice__btn"
+            onclick="document.getElementById('signing').scrollIntoView({behavior:'smooth'})">Оставить заявку</button>
     </section>
 
     <!-- FAQ -->
@@ -447,7 +455,7 @@
         </div>
     </section>
 
-    <section class="signing">
+    <section class="signing" id="signing">
         <div class="signing__container">
             <h2 class="signing__title">Записаться на собеседование</h2>
 

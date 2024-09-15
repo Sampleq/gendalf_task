@@ -17,6 +17,9 @@
 
         border-radius: 0.5rem !important;
 
+        font-family: $titleFont;
+        font-size: 1.8rem;
+        font-weight: 300;
 
         &::placeholder {
             color: $placeholderGrey;
@@ -26,13 +29,13 @@
 
     // for inputs validation visual
     .greenchecked {
-        background: no-repeat 140%/50% 80% url('../images/svg/greenchecked.svg');
+        background: no-repeat 135%/50% 80% url('../images/svg/greenchecked.svg');
         background-color: #FFF;
     }
 
     // for inputs validation visual
     .redcross {
-        background: no-repeat 140%/50% 80% url('../images/svg/redcross.svg');
+        background: no-repeat 135%/50% 80% url('../images/svg/redcross.svg');
         background-color: #FFF;
     }
 
