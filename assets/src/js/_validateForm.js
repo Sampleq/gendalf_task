@@ -5,6 +5,8 @@ export function validateForm(form) {
     const email = form.email;
     const phone = form.phone;
 
+
+    // okeyup - "online" checks; onchange - checks after finishing editing  
     name.onkeyup = function () {
         checkTextInput(this);
     }

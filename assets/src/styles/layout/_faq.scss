@@ -40,9 +40,47 @@
     &__questions {
         @include p2();
 
+        // list-style-image: url('../images/svg/collapsed.svg'); // not OK - bias
+
     }
 
     &__question {
+        position: relative;
+        padding-left: 3rem; // for marker "before"
+
+
+        // // OK; not use
+        // &::marker {
+        //     content: '▶ ';
+        //     color: $light_green;
+        //     font-size: 1.0em;
+        // }
+
+        &::before {
+            cursor: pointer;
+            // content: '▶ ';
+            // color: $light_green;
+            content: '';
+            display: block;
+            width: 2.3rem;
+            height: 2.3rem;
+            background: url('../images/svg/collapsed.svg') no-repeat;
+            background-size: cover;
+
+            position: absolute;
+            margin-left: -3rem;
+
+            @media ($notebook) {
+                margin-left: -4rem;
+            }
+        }
+
+        &_expanded::before {
+            background: url('../images/svg/expanded.svg') no-repeat;
+        }
+
+
+
 
         &>p:first-child {
             display: inline-block;
@@ -70,6 +108,7 @@
 
         @media ($notebook) {
             margin-bottom: 3rem;
+            padding-left: 4rem; // for marker "before"
         }
     }
 
